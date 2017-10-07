@@ -69,8 +69,14 @@ function testMe() {
   var someMsg = "some Message";
   console.log ("testMe(): " + someMsg);
 }
+showItThen("with Closure", function () {
+  shotIt("testMe With Closure(): " + someMsg);
+});
 
 
-console.log("global: " + someMsg);
+
+
+
+// console.log("global: " + someMsg);
 
 testMe();
