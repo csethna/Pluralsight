@@ -3,11 +3,11 @@ index.js
 */
 "use strict";
 
-var msg = "hello JavaScript";
-console.log(msg);
-
-var resultsDiv = document.getElementById("results");
-resultsDiv.innerHTML = "<p>This is from JavaScript</p>";
+// var msg = "hello JavaScript";
+// console.log(msg);
+//
+// var resultsDiv = document.getElementById("results");
+// resultsDiv.innerHTML = "<p>This is from JavaScript</p>";
 
 // var result = {
 //   name: "jQuery",
@@ -26,7 +26,7 @@ resultsDiv.innerHTML = "<p>This is from JavaScript</p>";
 //
 // console.log(result.phoneNumber);
 
-var results [{
+var results = [{
   name: "jQuery",
   language: "JavaScript",
   score: 4.5,
@@ -48,15 +48,21 @@ var results [{
     login: "cyrussethna",
     id: 123456
   }
-}]; //defining an array
+}];
 
-results.push(result);
-results.push ({
-  name: "dummy project"
-});
+for (var x = 0; x < results.length; x++) {
+  var result = results[x];
+  if (result.score > 4) continue;
+  console.log(result.name);
+}
 
 // console.log(results.length):
 // console.log(results[0].name);
+//
+// results.push(result);
+// results.push ({
+//   name: "dummy project"
+// });
 
 // console.log("msg is " + typeof(msg));
 // console.log("resultsDiv is " + typeof(resultsDiv));
