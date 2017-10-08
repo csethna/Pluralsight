@@ -55,6 +55,9 @@ results.push ({
   name: "dummy project"
 });
 
+// console.log(results.length):
+// console.log(results[0].name);
+
 // console.log("msg is " + typeof(msg));
 // console.log("resultsDiv is " + typeof(resultsDiv));
 //
