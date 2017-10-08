@@ -54,7 +54,7 @@ for (var x = 0; x < results.length; x++) {
   var result = results[x];
   if (result.score > 4) continue;
   console.log(result.name);
-}
+} //loops are a simple way to walk through collections
 
 // console.log(results.length):
 // console.log(results[0].name);
