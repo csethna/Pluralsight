@@ -9,6 +9,9 @@ index.js
 // var resultsDiv = document.getElementById("results");
 // resultsDiv.innerHTML = "<p>This is from JavaScript</p>";
 
+var resultList = jQuery("#resultList");
+resultList.text("This is text from jQuery");
+
 // var result = {
 //   name: "jQuery",
 //   language: "JavaScript",
